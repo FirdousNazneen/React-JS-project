@@ -1,0 +1,954 @@
+
+
+
+   /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar styling */
+.nabvar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(184, 130, 141);
+  padding: 1rem;
+}
+
+.Myclass, .Myclass2, .Myclass3, .Myclass4, .Myclass5, .Myclass6, .Myclass7,.Myclass8 {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.Myclass:hover, .Myclass2:hover, .Myclass3:hover, .Myclass4:hover, .Myclass5:hover, .Myclass6:hover, .Myclass7:hover {
+  background-color: #444;
+}
+
+.Myclass4 {
+  display: flex;
+  align-items: center;
+}
+
+.Myclass4 span {
+  background-color: #c97066;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  margin-left: 5px;
+}
+
+.Myclass5 {
+  font-weight: bold;
+}
+
+.welcome {
+  color: white;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nabvar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Myclass, .Myclass2, .Myclass3, .Myclass4, .Myclass5, .Myclass6, .Myclass7 {
+    margin: 10px 0;
+  }
+
+  .Myclass4 span {
+    font-size: 0.9rem;
+  }
+
+  .welcome {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+  }
+}
+
+/* Style for main content */
+.main-content {
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  text-align: center;
+  color: #555;
+}
+
+.card p {
+  text-align: center;
+  color: #777;
+}
+
+.card button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #2ecc71;
+}
+
+
+
+/* General styling for the page */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('/images/hero-banner.jpg'); /* Replace with your hero image */
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+  color: white;
+  text-align: center;
+  border-bottom: 5px solid #e74c3c;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.shop-now-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Popular Categories Section */
+.highlights {
+  padding: 3rem 1rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 280px;
+  text-align: center;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.category-card h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #777;
+  margin: 1rem 0;
+}
+
+.category-card button {
+  background-color: #27ae60;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-card button:hover {
+  background-color: #2ecc71;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.learn-more-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .category-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+   /* ............... */
+   /* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Veg Component Styles */
+.veg-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Veg Item List */
+.veg-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 1rem;
+}
+
+.veg-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.veg-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Vegetable Info (Name and Price) */
+.veg-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.veg-info h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.veg-price {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .veg-item {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+  }
+
+  .veg-info h3 {
+      font-size: 1.4rem;
+  }
+
+  .veg-price {
+      font-size: 1rem;
+  }
+
+  .add-to-cart-btn {
+      margin-top: 1rem;
+      width: 100%;
+  }
+}
+/* ............ */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nonveg Component Styles */
+.nonveg-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Nonveg Item List */
+.nonveg-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 1rem;
+}
+
+.nonveg-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nonveg-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Nonveg Info (Name and Price) */
+.nonveg-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nonveg-info h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.nonveg-price {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nonveg-item {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+  }
+
+  .nonveg-info h3 {
+      font-size: 1.4rem;
+  }
+
+  .nonveg-price {
+      font-size: 1rem;
+  }
+
+  .add-to-cart-btn {
+      margin-top: 1rem;
+      width: 100%;
+  }
+}
+/* ............... */
+/* Milk Component Styles */
+.milk-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Milk Item List */
+.milk-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 1rem;
+}
+
+.milk-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.milk-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Milk Info (Name and Price) */
+.milk-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.milk-info h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.milk-price {
+  font-size: 1.2rem;
+  color: #3498db; /* Light blue color for milk */
+  font-weight: bold;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #3498db; /* Light blue color for milk */
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2980b9; /* Slightly darker blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .milk-item {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+  }
+
+  .milk-info h3 {
+      font-size: 1.4rem;
+  }
+
+  .milk-price {
+      font-size: 1rem;
+  }
+
+  .add-to-cart-btn {
+      margin-top: 1rem;
+      width: 100%;
+  }
+}
+/* .......cart....... */
+
+
+
+/* Container styling */
+.cart-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #6a0dad;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #6a0dad;
+  font-size: 1.5rem;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0aaff;
+}
+
+button:active {
+  background-color: #9b79d1;
+}
+
+button.apply-discount, button.apply-coupon, button.complete-purchase {
+  background-color: #ff80bf;
+  color: white;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #6a0dad;
+}
+
+.discount-info, .coupon-info {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discount-info p, .coupon-info p {
+  color: #6a0dad;
+}
+
+.cart-items p {
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+/* ****abous us**** */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.about-image img {
+  max-width: 900%;
+  height:60px;
+  border-radius: 8px;
+}
+/* ****contact-us******** */
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.contact-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.contact-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-content h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e64a19;
+}
+
+.contact-image img {
+  max-width: 90%;
+  height: 60px;
+  border-radius: 8px;
+}
+/* search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.veg-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.veg-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.veg-info h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.veg-price {
+  color: #28a745;
+}
+
+.add-to-cart-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+/* nonveg search bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.nonveg-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.nonveg-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.nonveg-info h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.nonveg-price {
+  color: #dc3545;
+}
+
+.add-to-cart-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+ /* milk search bar */
+ .search-bar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.milk-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.milk-item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.milk-info h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.milk-price {
+  color: #28a745;
+}
+
+.add-to-cart-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.nav-icon {
+  margin-right: 10px; /* Space between icon and text */
+  border-radius: 50%; /* Optionally round the image */
+}
+
+.welcome {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
