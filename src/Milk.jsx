@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "./assets/store";
+import { addToCart } from "./Store";
 import { useState } from "react";
 
 function Milk() {

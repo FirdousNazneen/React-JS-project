@@ -1,16 +1,16 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./Home";
-import Nonveg from "./assets/Nonveg";
-import Aboutus from "./assets/aboutus";
-import Contactus from "./assets/contactus";
+import Nonveg from "./Nonveg";
+import Aboutus from "./aboutus";
+import Contactus from "./contactus";
 import "./App.css";
-import Orders from "./assets/Orders";
+import Orders from "./Orders";
 import Milk from "./Milk";
 import { useDispatch, useSelector } from "react-redux";
-import Cart from "./assets/cart";
-import Veg from "./assets/Veg";
+import Cart from "./Cart";
+import Veg from "./Veg";
 import Login from "./Login";
-import { logout } from "./assets/store";
+import { logout } from "./Store";
 import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
