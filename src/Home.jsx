@@ -24,7 +24,7 @@ function Home() {
           <div className="category-card">
             <img src="nonveg.jpg" alt="Non-Veg" />
             <h3>Non-Veg Items</h3>
-            <p>Premium quality non-veg products for you.</p>
+            <p>Premium quality non-veg products for you.</p> 
             {/* <button>Browse Non-Veg</button> */}
           </div>
           <div className="category-card">
