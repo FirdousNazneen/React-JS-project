@@ -6,7 +6,7 @@ const productslice=createSlice({
       veg:[{name:"POTATO",price:100 ,image:"potato.jpg"},
         {name:"TOMATO",price:200,image:"tomato.jpg"},
         {name:"BRINJAL",price:300,image:"brinjal.jpg"},
-        {name:"CUCUMBER",price:1200,image:"cucumber.jpg"},
+        {name:"CUCUMBER",price:200,image:"cucumber.jpg"},
         {name:"SPINACH",price:150,image:"spinach.jpg"},
         {name:"CARROT",price:400,image:"carrot.jpg"},
         {name:"CHILLI",price:180,image:"chilli.jpg"},
@@ -136,7 +136,7 @@ const store=configureStore(
         }
     
 )
-export default store
+export default store;
 export const{addToCart,increment,decrement,remove,clearcart}=cartSlice.actions; 
 export const {purchaseitem}=purchasedetailsslice.actions;
 export const{login,logout}=Authslice.actions;
