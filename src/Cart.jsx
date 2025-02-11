@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import {  clearcart, decrement, increment, purchaseitem, remove } from "./Store";
+import {  clearcart, decrement, increment, purchaseitem, remove } from "./store";
 import { useState } from "react";
 
 
