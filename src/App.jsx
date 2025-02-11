@@ -29,7 +29,7 @@ function App() {
             Home
           </Link>
           <Link to="/Veg" className="Myclass2">
-            <img src="public/shopping (1).png" alt="Veg Icon" className="nav-icon" width={25} height={25} />
+            <img src="shopping (1).png" alt="Veg Icon" className="nav-icon" width={25} height={25} />
             Veg items
           </Link>
           <Link to="/Nonveg" className="Myclass3">

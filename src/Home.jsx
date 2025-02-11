@@ -16,19 +16,19 @@ function Home() {
         <h2>Popular Categories</h2>
         <div className="category-cards">
           <div className="category-card">
-            <img src="/public/veg.jpg" alt="Veg" />
+            <img src="veg.jpg" alt="Veg" />
             <h3>Veg Items</h3>
             <p>Explore our wide range of fresh vegetables!</p>
             {/* <button>Browse Veg</button> */}
           </div>
           <div className="category-card">
-            <img src="/public/nonveg.jpg" alt="Non-Veg" />
+            <img src="nonveg.jpg" alt="Non-Veg" />
             <h3>Non-Veg Items</h3>
             <p>Premium quality non-veg products for you.</p>
             {/* <button>Browse Non-Veg</button> */}
           </div>
           <div className="category-card">
-            <img src="/public/milk.jpg" alt="Milk" />
+            <img src="milk.jpg" alt="Milk" />
             <h3>Milk Products</h3>
             <p>Fresh milk and dairy products delivered daily.</p>
             {/* <button>Browse Milk</button> */}
