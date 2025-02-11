@@ -125,7 +125,7 @@ const purchasedetailsslice=createSlice({
     
  )
 
-const store=configureStore(
+const Store=configureStore(
     {
         reducer:{
             products:productslice.reducer,
@@ -136,7 +136,7 @@ const store=configureStore(
         }
     
 )
-export default store;
+export default Store;
 export const{addToCart,increment,decrement,remove,clearcart}=cartSlice.actions; 
 export const {purchaseitem}=purchasedetailsslice.actions;
 export const{login,logout}=Authslice.actions;

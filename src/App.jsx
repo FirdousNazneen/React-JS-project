@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Cart from "./Cart";
 import Veg from "./Veg";
 import Login from "./Login";
-import { logout } from "./Store";
+import { logout } from "./store";
 import 'font-awesome/css/font-awesome.min.css';
 
 function App() {

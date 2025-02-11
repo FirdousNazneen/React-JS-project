@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "./Store";
+import { addToCart } from "./store";
 import { useState } from "react";
 
 function Veg() {
