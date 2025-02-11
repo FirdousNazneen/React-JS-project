@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "./store";
+
 import { useState } from "react";
+import { addToCart } from "./Store";
 
 function Milk() {
   const Milk = useSelector(state => state.products.milk);
