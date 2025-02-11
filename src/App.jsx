@@ -10,8 +10,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Cart from "./Cart";
 import Veg from "./Veg";
 import Login from "./Login";
-import { logout } from "./Store";
 import 'font-awesome/css/font-awesome.min.css';
+import { logout } from "./Store";
 
 function App() {
   const cart = useSelector(state => state.cart);
