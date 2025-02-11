@@ -136,7 +136,7 @@ const Store=configureStore(
         }
     
 )
-export default Store;
+export default store;
 export const{addToCart,increment,decrement,remove,clearcart}=cartSlice.actions; 
 export const {purchaseitem}=purchasedetailsslice.actions;
 export const{login,logout}=Authslice.actions;
